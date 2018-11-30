@@ -12,12 +12,24 @@ namespace EX32
 	{
 		static void Main(string[] args)
 		{
+			Program program = new Program();
+			program.Run();
+		}
+
+		public DatabaseController DBC { get; set; }
+
+		public Program()
+		{
 			string conStr =
 				"Server=EALSQL1.eal.local;" +
 				"Database=Ex31Klinik;" +
 				"User Id=A_STUDENT24;" +
 				"Password=A_OPENDB24";
-			DatabaseController DBC = new DatabaseController(conStr);
+			DBC = new DatabaseController(conStr);
+		}
+
+		private void Run()
+		{
 			MainMenu menu = new MainMenu(DBC);
 			menu.Run();
 		}

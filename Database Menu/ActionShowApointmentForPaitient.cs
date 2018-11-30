@@ -1,13 +1,12 @@
-﻿using Database;
-using Smart_menu;
+﻿using Smart_menu;
 
 namespace Database_Menu
 {
 	internal class ActionShowAppointmentForPaitient : IMenuPoint
 	{
-		private DatabaseController databaseController;
+		private IDatabaseController databaseController;
 
-		public ActionShowAppointmentForPaitient(DatabaseController databseController)
+		public ActionShowAppointmentForPaitient(IDatabaseController databseController)
 		{
 			this.databaseController = databseController;
 		}
@@ -19,7 +18,8 @@ namespace Database_Menu
 
 		public void Invoke()
 		{
-			databaseController.ShowAppointmentForPaitient();
+			string appointment = databaseController.GetAppointmentForPaitient();
+			System.Console.WriteLine(appointment);
 		}
 	}
 }

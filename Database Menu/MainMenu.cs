@@ -1,14 +1,13 @@
 ﻿using System;
 using Smart_menu;
-using Database;
 
 namespace Database_Menu
 {
 	public class MainMenu
 	{
-		private DatabaseController databaseController;
+		private IDatabaseController databaseController;
 
-		public MainMenu(DatabaseController databseController)
+		public MainMenu(IDatabaseController databseController)
 		{
 			this.databaseController = databseController;
 		}

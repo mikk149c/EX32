@@ -31,6 +31,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Smart menu, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Abstact smart menu\Smart menu\bin\Debug\netstandard1.4\Smart menu.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -43,18 +47,9 @@
   <ItemGroup>
     <Compile Include="ActionInsertAdress.cs" />
     <Compile Include="ActionShowApointmentForPaitient.cs" />
+    <Compile Include="IDatabaseController.cs" />
     <Compile Include="MainMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Abstact smart menu\Smart menu\Smart menu.csproj">
-      <Project>{8db62bf0-3fe3-46c4-8aad-71c7167048da}</Project>
-      <Name>Smart menu</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Database\Database.csproj">
-      <Project>{a9b834a1-e638-4022-afd6-0a2b2474c0a7}</Project>
-      <Name>Database</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

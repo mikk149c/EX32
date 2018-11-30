@@ -1,5 +1,4 @@
-﻿using Database;
-using Smart_menu;
+﻿using Smart_menu;
 using System;
 using System.Collections.Generic;
 
@@ -7,9 +6,9 @@ namespace Database_Menu
 {
 	internal class ActionInsertAddress : IMenuPoint
 	{
-		private DatabaseController databaseController;
+		private IDatabaseController databaseController;
 
-		public ActionInsertAddress(DatabaseController databseController)
+		public ActionInsertAddress(IDatabaseController databseController)
 		{
 			this.databaseController = databseController;
 		}
