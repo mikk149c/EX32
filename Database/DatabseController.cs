@@ -1,7 +1,6 @@
-﻿using System;
+﻿using Database_Menu;
+using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
-using Database_Menu;
 
 namespace Database
 {
@@ -16,7 +15,7 @@ namespace Database
 
 		public void InsertAddress(string street, string housNb, string zipCode)
 		{
-				DB.InsertAddress(street, housNb, zipCode);
+			DB.InsertAddress(street, housNb, zipCode);
 		}
 
 		public List<string> GetZipCodes()

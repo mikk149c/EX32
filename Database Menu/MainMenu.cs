@@ -1,5 +1,4 @@
-﻿using System;
-using Smart_menu;
+﻿using Smart_menu;
 
 namespace Database_Menu
 {
